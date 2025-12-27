@@ -1,0 +1,433 @@
+meta {
+    -theme-display-name: "Default+";
+    -theme-interface-style: dark;
+    -theme-vibrancy: vibrant;
+    -theme-accent-color: auto;
+}
+
+/*
+ * Window styles
+ */
+meta.window {
+    border-color: hsla(0, 0%, 100%, 0.1);
+}
+meta.titlebar {
+    color: hsl(0, 0%, 100%);
+    border-color: hsla(0, 0%, 0%, 0.6);
+}
+meta.titlebar.inactive {
+}
+
+meta.button {
+    background: linear-gradient(hsl(240, 7%, 34%), hsl(240, 7%, 27%));
+    border: linear-gradient(hsl(240, 7%, 19%), hsl(240, 7%, 15%));
+    color: white;
+}
+meta.button.highlighted {
+    background: linear-gradient(hsl(240, 7%, 44%), hsl(240, 7%, 44%));
+    color: white;
+}
+meta.button.selected {
+    color: white;
+}
+meta.button.highlighted.selected {
+    color: white;
+}
+meta.button.disabled {
+    
+}
+
+meta.textfield {
+    background-color: hsl(240, 7%, 15%);
+    border-color: hsl(240, 7%, 24%);
+}
+meta.textfield.highlighted {
+    background-color: hsl(240, 7%, 12%);
+    border-color: hsl(240, 7%, 24%);
+}
+
+/*
+ * Document styles
+ */
+meta.document {
+    background-color: hsl(240, 7%, 10%);
+    border-color: hsla(0, 0%, 100%, 0.1);
+}
+
+meta.document.button {
+    background: linear-gradient(hsl(240, 7%, 27%), hsl(240, 7%, 23%));
+    border: linear-gradient(hsl(240, 7%, 13%), hsl(240, 7%, 5%));
+}
+meta.document.button.disabled {
+    background: linear-gradient(hsla(250, 7%, 27%, 0.3), hsla(250, 7%, 23%, 0.3));
+}
+meta.document.button.highlighted {
+    background: linear-gradient(hsl(240, 7%, 36%), hsl(240, 7%, 32%));
+}
+
+meta.document.textfield {
+    background-color: hsl(240, 7%, 12%);
+    border-color: hsl(240, 7%, 21%);
+}
+meta.document.textfield.highlighted {
+    background-color: hsl(240, 7%, 12%);
+    border-color: hsl(240, 7%, 21%);
+}
+
+/* Text */
+meta.text {
+    color: rgb(255, 255, 255);
+}
+meta.text.invisible {
+    color: rgb(77, 77, 77);
+}
+meta.text.selected {
+    background-color: rgba(81, 91, 112, 1);
+}
+
+/* Cursor */
+meta.cursor {
+    background-color: rgba(52, 53, 64, 0.5);
+}
+
+/* Indentation Guides */
+meta.indentguide {
+    border-color: hsla(240, 7%, 50%, 0.2);
+}
+
+/* Gutter */
+meta.gutter {
+    color: hsl(240, 7%, 40%);
+}
+meta.gutter.selected {
+    background-color: rgba(52, 53, 64, 0.5);
+    color: hsl(0, 0%, 100%);
+}
+
+
+/*
+ * Syntax styles - Mapped from Default+.xccolortheme
+ */
+
+/* Keywords - xcode.syntax.keyword: rgb(242, 36, 140) */
+keyword {
+    color: rgb(242, 36, 140);
+}
+
+/* Comments - xcode.syntax.comment: rgb(46, 168, 91) */
+comment {
+    color: rgb(46, 168, 91);
+    font-style: italic;
+}
+
+/* Processing/Preprocessor - xcode.syntax.preprocessor: rgb(253, 143, 63) */
+processing {
+    color: rgb(253, 143, 63);
+}
+
+declaration {
+    color: rgb(53, 176, 216);
+}
+
+bracket {
+    color: rgb(255, 255, 255);
+}
+
+operator {
+    color: rgb(255, 255, 255);
+}
+
+invalid {
+    background-color: rgb(252, 70, 81);
+    color: rgb(255, 255, 255);
+}
+
+link {
+    color: rgb(79, 165, 255);
+}
+
+/* Values */
+value.boolean {
+    color: rgb(242, 36, 140);
+}
+value.null {
+    color: rgb(242, 36, 140);
+}
+
+/* Numbers - xcode.syntax.number: rgb(255, 231, 109) */
+value.number {
+    color: rgb(255, 231, 109);
+}
+
+/* Characters - xcode.syntax.character: rgb(255, 231, 109) */
+value.entity {
+    color: rgb(255, 231, 109);
+}
+value.symbol {
+    color: rgb(255, 231, 109);
+}
+
+/* Identifiers */
+
+/* Type declarations - xcode.syntax.declaration.type: rgb(102, 218, 255) */
+identifier.type {
+    color: rgb(102, 218, 255);
+}
+
+/* Constants - xcode.syntax.identifier.constant: rgb(86, 208, 179) */
+identifier.constant {
+    color: rgb(86, 208, 179);
+    font-weight: bold;
+}
+
+/* System constants - xcode.syntax.identifier.constant.system: rgb(171, 100, 255) */
+identifier.constant.core {
+    color: rgb(171, 100, 255);
+    font-weight: bold;
+}
+
+/* Variables - xcode.syntax.identifier.variable: rgb(86, 208, 179) */
+identifier.global, identifier.variable {
+    color: rgb(86, 208, 179);
+    font-style: italic;
+}
+
+/* System variables */
+identifier.global.core, identifier.variable.core {
+    color: rgb(171, 100, 255);
+    font-style: italic;
+}
+
+/* Functions and methods - xcode.syntax.identifier.function: rgb(86, 208, 179) */
+identifier.property,
+identifier.decorator,
+identifier.function,
+identifier.method {
+    color: rgb(86, 208, 179);
+}
+
+/* System functions - xcode.syntax.identifier.function.system: rgb(171, 100, 255) */
+identifier.function.core,
+identifier.method.core {
+    color: rgb(171, 100, 255);
+}
+
+identifier.key {
+    color: rgb(86, 208, 179);
+}
+
+identifier.argument {
+    color: rgb(86, 208, 179);
+}
+
+/* Strings - xcode.syntax.string: rgb(252, 70, 81) */
+string {
+    color: rgb(252, 70, 81);
+    font-style: italic;
+}
+
+string.key {
+    color: rgb(86, 208, 179);
+}
+
+string-template {
+    color: rgb(252, 70, 81);
+    font-style: italic;
+}
+
+string-template.value {
+    color: rgb(252, 70, 81);
+}
+
+regex {
+    color: rgb(252, 70, 81);
+}
+
+regex.escaped {
+    color: rgb(252, 70, 81);
+}
+
+cdata {
+    color: rgb(46, 168, 91);
+}
+
+/* Markup */
+markup.heading {
+    color: rgb(86, 208, 179);
+}
+
+markup.line {
+    color: rgb(255, 231, 109);
+}
+
+markup.bold {
+    color: rgb(86, 208, 179);
+    font-weight: bold;
+}
+
+markup.italic {
+    color: rgb(86, 208, 179);
+    font-style: italic;
+}
+
+markup.strikethrough {
+    color: rgb(252, 70, 81);
+}
+
+markup.list.item {
+    color: rgb(86, 208, 179);
+}
+
+/* Markup code - xcode.syntax.markup.code: rgb(170, 13, 145) */
+markup.code {
+    background-color: rgba(128, 128, 128, 0.2);
+    color: rgb(170, 13, 145);
+}
+
+/* URLs - xcode.syntax.url: rgb(79, 165, 255) */
+markup.link {
+    color: rgb(79, 165, 255);
+}
+
+/* Type definitions - xcode.syntax.identifier.class: rgb(86, 208, 179) */
+definition.class class.name,
+definition.type type.name,
+definition.package package.name,
+definition.enum enum.name,
+definition.union union.name,
+definition.struct struct.name {
+    color: rgb(86, 208, 179);
+}
+
+/* System types - xcode.syntax.identifier.class.system: rgb(208, 168, 255) */
+definition.class.core class.name,
+definition.type.core type.name {
+    color: rgb(208, 168, 255);
+}
+
+/* Member definitions */
+definition.property property.name,
+definition.function function.name,
+definition.method method.name {
+    color: rgb(86, 208, 179);
+}
+
+/* Tags */
+tag {
+    color: rgb(86, 208, 179);
+}
+
+tag.framework {
+    color: rgb(253, 143, 63);
+}
+
+/* Attributes - xcode.syntax.attribute: rgb(224, 157, 101) */
+tag.attribute.name {
+    color: rgb(224, 157, 101);
+}
+
+tag.attribute.value {
+    color: rgb(252, 70, 81);
+}
+
+tag.attribute.value.link {
+    color: rgb(79, 165, 255);
+}
+
+/* Styles */
+style.at {
+    color: rgb(253, 143, 63);
+}
+
+style.selector.element {
+    font-weight: bold;
+}
+
+style.selector.identifier.id {
+    color: rgb(86, 208, 179);
+}
+
+style.selector.identifier.class {
+    color: rgb(86, 208, 179);
+}
+
+style.selector.pseudoclass {
+    color: rgb(86, 208, 179);
+}
+
+style.selector.pseudoelement {
+    color: rgb(86, 208, 179);
+}
+
+style.attribute.name {
+    color: rgb(86, 208, 179);
+}
+
+style.value.number {
+    color: rgb(255, 231, 109);
+}
+
+style.value.color.hex {
+    color: rgb(255, 231, 109);
+}
+
+style.value.keyword {
+    color: rgb(242, 36, 140);
+}
+
+style.value.color.named {
+    color: rgb(242, 36, 140);
+}
+
+style.value.identifier.function {
+    color: rgb(86, 208, 179);
+}
+
+terminal.black {
+    color: hsl(0, 0%, 16%);
+}
+terminal.red {
+    color: rgb(252, 70, 81);
+}
+terminal.green {
+    color: rgb(46, 168, 91);
+}
+terminal.yellow {
+    color: rgb(255, 231, 109);
+}
+terminal.blue {
+    color: rgb(79, 165, 255);
+}
+terminal.magenta {
+    color: rgb(242, 36, 140);
+}
+terminal.cyan {
+    color: rgb(86, 208, 179);
+}
+terminal.white {
+    color: hsl(0, 0%, 75%);
+}
+terminal.bright-black {
+    color: hsl(0, 0%, 28%);
+}
+terminal.bright-red {
+    color: rgb(252, 70, 81);
+}
+terminal.bright-green {
+    color: rgb(46, 168, 91);
+}
+terminal.bright-yellow {
+    color: rgb(255, 231, 109);
+}
+terminal.bright-blue {
+    color: rgb(102, 218, 255);
+}
+terminal.bright-magenta {
+    color: rgb(208, 168, 255);
+}
+terminal.bright-cyan {
+    color: rgb(86, 208, 179);
+}
+terminal.bright-white {
+    color: hsl(0, 0%, 97%);
+}
